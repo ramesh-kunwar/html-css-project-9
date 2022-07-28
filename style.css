@@ -1,0 +1,322 @@
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #f8f8fa;
+}
+
+/* 
+  HEADER
+*/
+header {
+  background-color: #3400ff;
+  height: 80vh;
+}
+
+header .navigation {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav a {
+  color: white;
+  font-size: .8rem;
+  margin: 1rem;
+}
+
+header nav a.nav-item-active {
+  padding: .3rem .8rem;
+  background-color: white;
+  border-radius: .2rem;
+  color: #4517fe;
+}
+
+
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-text {
+  margin-top: 4rem;
+  color: white;
+  margin-left: 5%;
+  font-size: 1.2rem;
+}
+
+.header-text h2 {
+  margin: 1rem auto;
+  line-height: 3rem;
+}
+
+.header-text p {
+  font-weight: lighter;
+}
+
+/* 
+  COMPANIES
+*/
+
+.companies {
+  display: flex;
+}
+
+.companies a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin: 2rem 3rem 2rem 0;
+  display: block;
+  font-family: 'Righteous';
+}
+
+
+/* 
+*****************************
+      API SECTION
+****************************
+*/
+
+.api {
+  margin-top: 6rem;
+}
+
+.api h1 {
+  font-family: 'Righteous';
+  font-weight: 900;
+}
+
+.api .cards {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.api .cards .card {
+  padding: 2rem 1rem;
+}
+
+.api .cards .card-active {
+  background-color: white;
+  padding: 2rem 1rem;
+}
+
+
+/* 
+**********************************
+    BLOG HEADING
+**********************************
+
+*/
+
+.blog-heading {
+  margin-top: 6rem;
+}
+
+.blog-cards {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-cards .blog-card {
+  display: flex;
+  align-items: center;
+}
+
+.blog-cards .blog-card .blog-content h6 {
+  color: #4517fe;
+}
+
+.blog-cards .blog-card .blog-content {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: white;
+  padding: 3.8rem 4rem;
+  position: relative;
+}
+
+.blog-bottom-section {
+  display: flex;
+  gap: .5rem;
+  position: absolute;
+  bottom: -1.5rem;
+}
+
+
+/* 
+***********************************
+        FAQ SECTION
+*********************************
+*/
+
+.faq-section {
+  margin-top: 6rem;
+  background-color: #eaedff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-section .faq-content {
+  margin-right: 5%;
+  padding: 2rem 5%;
+
+}
+
+.faq-section h2 {
+  font-family: 'Righteous';
+  font-size: 3rem;
+
+}
+
+.faq-section h4 {
+  font-weight: lighter;
+  margin: 2rem auto;
+}
+
+.faq-section h4.bigger {
+  font-weight: bolder;
+  font-family: 'Righteous';
+  font-size: 1.2rem;
+}
+
+.faq-section .faq-content button {
+  background-color: #5a30fc;
+  border-radius: 5px;
+  border: none;
+  padding: .4rem .8rem;
+  color: white;
+}
+
+/* 
+*************************
+      DOWNLOAD SECTION
+*****************************
+*/
+
+.download-section {
+  margin: 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.download-section h1 {
+  font-family: 'Righteous';
+
+}
+
+.download-section input {
+  padding: .7rem 2rem;
+  border-radius: 2rem;
+  width: 300px;
+  background-color: #eaedff;
+  border: none;
+}
+
+.download-section button {
+  background-color: #5a30fc;
+  color: white;
+  padding: .5rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  margin-left: -8rem;
+
+}
+
+
+/* 
+*************************************
+    FOOTER SECTION
+***********************************
+
+*/
+
+.footer-section {
+  margin-top: 4rem;
+  background-color: #3400ff;
+  padding: 4rem;
+
+}
+
+.footer-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-section ul.logos-list {
+  display: flex;
+}
+
+.footer-section li {
+  color: white;
+  font-weight: lighter;
+  font-size: .8rem;
+  list-style-type: none;
+  display: block;
+  position: relative;
+}
+
+.footer-right img {
+  margin-left: 1rem;
+}
+
+.footer-section .footer-left li,
+.footer-right .list li {
+  margin: 2rem 1rem;
+}
+
+.footer-section li::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  right: -10px;
+  top: 2px;
+  background-color: white;
+  height: 70%;
+}
+
+.footer-section li:nth-last-child(1):before {
+  display: none;
+}
+
+.footer-section ul.list {
+  display: flex;
+}
+
+@media (min-width:1400px) {
+  .header-text {
+    margin-top: 8rem;
+    color: white;
+    margin-left: 5%;
+    font-size: 2rem;
+  }
+
+  .header-text h2 {
+    margin: 1rem auto;
+    line-height: 3rem;
+  }
+
+  .header-text p {
+    font-weight: lighter;
+  }
+
+  header .header-image {
+    width: 850px;
+  }
+}
